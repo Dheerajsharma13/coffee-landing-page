@@ -34,7 +34,7 @@ const Testimonials = () => {
     const { quote, name, role, image } = testimonials[currentIndex];
 
     return (
-        <section className="py-20 md:py-24 bg-white relative overflow-hidden" id="testimonials">
+        <section className="md:py-24 pt-12 pb-20 bg-white relative overflow-hidden" id="testimonials">
 
             <img src={coffeeBlast} className='absolute md:block hidden h-[300px] top-0 right-0' alt="" />
 
@@ -42,7 +42,7 @@ const Testimonials = () => {
 
             <div className="container mx-auto px-8 md:px-24 xl:px-[93px] text-center relative z-10">
 
-                <div className="mb-16">
+                <div className="md:mb-16 mb-8">
                     <Title text="Our coffee perfection feedback" />
                     <p className="text-gray-600 text-lg">
                         Our customers have amazing things to say about us

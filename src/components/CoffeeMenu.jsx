@@ -39,9 +39,9 @@ const coffees = [
 
 const CoffeeMenu = () => {
     return (
-        <section className="md:py-24 py-10 relative bg-coffee-cream" id="menu">
-            <img src={coffeeBlast} className=' md:block hidden absolute rotate-y-180 h-[200px] top-0 left-0' alt="" />
-            <div className="container mx-auto px-8 md:px-24 xl:px-[93px] text-center">
+        <section className="md:py-24 py-13 relative bg-coffee-cream" id="menu">
+            <img src={coffeeBlast} className=' md:block hidden absolute rotate-y-180 h-50 top-0 left-0' alt="" />
+            <div className="container mx-auto px-8 md:px-24 xl:px-23.25 text-center">
 
 
                 <div className="mb-16 mx-auto">
@@ -56,7 +56,7 @@ const CoffeeMenu = () => {
                     {coffees.map((coffee) => (
                         <div
                             key={coffee.id}
-                            className="bg-white rounded-xl overflow-hidden shadow-lg border border-coffee-light/20 flex flex-col group transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+                            className="bg-white rounded-xl overflow-hidden shadow-lg border border-coffee-light/20 flex flex-col group hover:shadow-2xl"
                         >
 
                             <div className="h-56 relative overflow-hidden">
@@ -67,7 +67,7 @@ const CoffeeMenu = () => {
                                 />
                             </div>
 
-                            <div className="p-6 flex flex-col flex-grow items-center">
+                            <div className="p-6 flex flex-col grow items-center">
                                 <h3 className="text-2xl font-bold font-serif text-coffee-dark mb-2">{coffee.name}</h3>
                                 <p className="text-sm text-gray-500 mb-4">{coffee.description}</p>
 
@@ -75,7 +75,7 @@ const CoffeeMenu = () => {
                                     <span className="text-xl font-bold text-coffee-dark">{coffee.price}</span>
                                 </div>
 
-                                <button className="btn-primary w-full py-2 !text-sm whitespace-nowrap opacity-90 group-hover:opacity-100 shadow-none hover:shadow-lg mt-auto">
+                                <button className="btn-primary w-full py-2 text-sm! whitespace-nowrap opacity-90 group-hover:opacity-100 shadow-none hover:shadow-lg mt-auto">
                                     Order Now
                                 </button>
                             </div>

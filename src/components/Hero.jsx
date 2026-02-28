@@ -4,7 +4,7 @@ import heroImage from "../assets/hero-image.jpg";
 const Hero = () => {
     return (
         <section
-            className="relative md:min-h-screen min-h-[675px] flex items-center md:pt-8 pt-4"
+            className="relative md:min-h-screen min-h-[650px] flex items-center md:pt-8 pt-4"
             id="home"
         >
 

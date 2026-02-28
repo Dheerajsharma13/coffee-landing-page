@@ -5,7 +5,7 @@ import footerImg from '../assets/footer_image.svg'
 
 const Footer = () => {
     return (
-        <footer className="relative bg-coffee-dark text-gray-300 pt-15 md:pt-20 pb-10" id="contact">
+        <footer className="relative bg-coffee-dark text-gray-300 md:pb-8 md:pt-16 py-10 " id="contact">
 
             <div
                 className="absolute py-8 object-cover inset-0 z-0 before:content-[''] before:absolute before:inset-0 bg-cover bg-center bg-no-repeat"
@@ -13,12 +13,12 @@ const Footer = () => {
             ></div>
 
             <div
-                className="absolute inset-0 z-0 before:content-[''] before:absolute before:inset-0 bg-[#603809]/80 before:z-10 bg-cover bg-center bg-no-repeat"
+                className="absolute inset-0 z-0 before:content-[''] before:absolute before:inset-0 bg-[#603809]/70 before:z-10 bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: "url('https://images.unsplash.com/photo-1495474472201-4475510620ef?q=80&w=2000&auto=format&fit=crop')" }}
             ></div>
 
             <div className="relative z-10 container mx-auto px-8 md:px-24 xl:px-[93px]">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-8">
 
 
                     <div className="space-y-6">
@@ -84,7 +84,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className="border-t border-gray-800 pt-8 text-center text-sm">
+                <div className="border-t border-gray-800  pt-8 text-center text-sm">
                     <p>© {new Date().getFullYear()} Bean Scene. All rights reserved.</p>
                 </div>
             </div>

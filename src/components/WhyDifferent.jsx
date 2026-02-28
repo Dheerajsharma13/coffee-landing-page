@@ -32,7 +32,7 @@ const features = [
 
 const WhyDifferent = () => {
     return (
-        <section className="py-24 relative bg-white" id="why-us">
+        <section className="md:py-24 py-10 relative bg-white" id="why-us">
             <img src={coffeeBlast} className='md:block hidden absolute h-[200px] top-0 right-0' alt="" />
             <div className="container mx-auto px-8 md:px-24 xl:px-[93px] text-center">
 

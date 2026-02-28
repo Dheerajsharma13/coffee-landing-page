@@ -17,6 +17,17 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isOpen]);
+
     const navLinks = [
         { name: 'Home', href: '#' },
         { name: 'About Us', href: '#about' },
@@ -25,10 +36,14 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-coffee-dark shadow-lg py-4 opacity-70' : 'bg-transparent py-6'}`}>
-            <div className="container mx-auto px-8 md:px-24 xl:px-[93px] flex justify-between items-center">
+        <nav
+            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
+                ? 'bg-coffee-dark/70 backdrop-blur-md shadow-lg py-4'
+                : 'bg-transparent py-6'
+                }`}
+        >            <div className="container mx-auto px-8 md:px-24 xl:px-[93px] flex justify-between items-center">
 
-                <a id='navLogo' href="#" className="text-3xl font-bold text-white font-clicker">
+                <a id='navLogo' href="#" className="text-4xl font-bold text-white font-clicker">
                     Bean Scene
                 </a>
 
@@ -60,7 +75,7 @@ const Navbar = () => {
 
 
             {isOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-coffee-dark shadow-xl pb-6 pt-2 flex flex-col items-center space-y-4">
+                <div className="md:hidden absolute top-full left-0 w-full h-screen bg-coffee-dark/80 shadow-xl backdrop-blur-xl pb-6 pt-6 flex flex-col items-center space-y-6">
                     {navLinks.map((link) => (
                         <a
                             key={link.name}

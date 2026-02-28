@@ -12,7 +12,7 @@ const CTA = () => {
                 style={{ backgroundImage: `url(${cupbgimg})` }}
             ></div>
 
-            <section className="relative w-full min-h-[500px] flex items-center object-cover">
+            <section className="relative w-full md:min-h-125 min-h-120 flex items-center object-cover">
 
                 <img
                     className='absolute md:block hidden right-0 h-full z-8 '
@@ -21,8 +21,8 @@ const CTA = () => {
 
                 <div className="absolute inset-0 bg-[#603809]/40"></div>
 
-                <div className="container mx-auto px-8 pt-8 md:px-24 xl:px-[93px] relative z-20">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div className="container mx-auto px-8 md:pt-8 md:px-24 xl:px-23.25 relative z-20">
+                    <div className="flex flex-col md:flex-row items-center justify-between md:gap-12">
 
                         <div className="w-full md:w-2/3 text-white space-y-6">
                             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-serif leading-tight">
@@ -38,11 +38,11 @@ const CTA = () => {
                             </button>
                         </div>
 
-                        <div className="w-full py-8 md:w-1/3 flex justify-center md:justify-end object-cover bottom-8 right-30 relative">
+                        <div className="w-full md:block hidden py-8 md:w-1/3 flex justify-center md:justify-end object-cover bottom-8 right-30 relative">
                             <img
                                 src={ctaImage}
                                 alt="Coffee Cup"
-                                className="w-64 md:block hidden z-10 h-[400px] md:w-80 lg:w-[420px] object-contain drop-shadow-2xl translate-y-6 md:translate-y-10"
+                                className="w-64 z-10 h-100 md:w-80 lg:w-105 object-contain drop-shadow-2xl translate-y-6 md:translate-y-10"
                             />
                         </div>
 

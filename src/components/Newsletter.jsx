@@ -4,7 +4,7 @@ import cupbgimg from '../assets/cup-bg-img.jpg'
 
 const Newsletter = () => {
     return (
-        <section className="relative py-24 flex items-center justify-center text-center">
+        <section className="relative md:py-24 py-10 flex items-center justify-center text-center">
             <div
                 className="absolute py-8 object-cover inset-0 z-0 before:content-[''] before:absolute before:inset-0 bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${cupbgimg})` }}

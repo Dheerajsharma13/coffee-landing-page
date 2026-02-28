@@ -4,9 +4,9 @@ import Title from './Title';
 
 const Discover = () => {
     return (
-        <section className="py-4 md:py-18 bg-white" id="about">
-            <div className="container mx-auto px-8 md:px-24 xl:px-[93px]">
-                <div className="flex flex-col md:flex-row items-center gap-16">
+        <section className="md:py-24 py-12 bg-white" id="about">
+            <div className="container mx-auto px-8 md:px-24 xl:px-23.25">
+                <div className="flex flex-col md:flex-row items-center">
 
                     <div className="w-full md:w-1/2 space-y-6">
                         <Title text="Discover the best coffee" />
@@ -20,12 +20,12 @@ const Discover = () => {
                         </div>
                     </div>
 
-                    <div className="w-full md:w-1/2 flex justify-center mt-10 md:mt-0 relative group">
+                    <div className="w-full md:w-1/2 flex justify-center md:mt-0 relative group">
 
                         <img
                             src={discoverImage}
                             alt="Heart shaped coffee beans"
-                            className="w-full md:block hidden h-[467px] w-[568px]  transition-transform duration-700 hover:scale-110"
+                            className="md:block hidden h-116.75 w-142 transition-transform duration-700 hover:scale-110"
                         />
 
                     </div>

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+;
+
+#navLogo {
+  font-family: "Clicker Script", cursive;
+}
+
+
+@theme {
+  --color-coffee-dark: #1f140f;
+  --color-coffee-primary: #38220f;
+  --color-coffee-secondary: #967259;
+  --color-coffee-light: #dbc1ac;
+  --color-coffee-cream: #f4eee8;
+  --color-coffee-gold: #e2a65a;
+  --color-coffee-accent: #b05c31;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-cursive: 'Great Vibes', cursive;
+}
+
+;
+
+body {
+  background-color: var(--color-coffee-cream);
+  color: var(--color-coffee-dark);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
+
+.script-font {
+  font-family: var(--font-cursive);
+}
+
+@layer utilities {
+  .btn-primary {
+    @apply bg-coffee-gold text-coffee-dark font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:bg-yellow-500 shadow-md;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-coffee-gold text-coffee-gold font-bold py-3 px-8 rounded-full transition-all duration-300 hover:bg-coffee-gold hover:text-coffee-dark shadow-md;
+  }
+}
